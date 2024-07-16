@@ -5,23 +5,23 @@
 }
 
 .container {
-    height: 100vh;
+    height: auto;
     width: 100%;
     overflow: hidden;
     position: relative;
     border: 1px solid black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: sans-serif
 
 }
 
 .navbar {
     background-image: url(footer2.jpg);
-    height: 100px;
+    height: 120px;
     width: 100%;
     background-color: rgb(221, 217, 217);
     display: flex;
     align-items: center;
-    border: 1px solid gray;
+    border: 1px solid rgb(24, 23, 23);
     position: absolute;
     top: 0;
 }
@@ -40,7 +40,7 @@
 .nav ul {
     list-style: none;
     display: flex;
-    column-gap: 70px;
+    column-gap: 50px;
 
 }
 
@@ -109,6 +109,200 @@
     border-radius: 10px;
     border: none;
 }
+.brief{
+    height: 900px;
+    width: 100%;
+    color: black;
+     margin-top: 150px;
+    font-size: 20px;
+}
+.brief1{
+    height: 500px;
+    width: 100%;
+    background-image: url(/background6.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: rgb(249, 250, 243);
+    font-weight: 500;
+    margin-top: 50px;
+}
+.vision{
+    background-image: url(our\ vision);
+    background-position: center;
+    background-size: cover;
+    height: 430px;
+    width: 100%;
+}
+.vision h5{
+    padding: 10px;
+    color:rgb(51, 33, 13);
+    font-size: 20px;
+}
+.vision p{
+    padding-top: 10px;
+    color: rgb(8, 8, 8);
+    font-size: 20px;
+    
+}
+.bios{
+    height: 1200px;
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 30px;
+    background-color: rgb(216, 223, 223);
+    
+    
+}
+.bios1,.bios2,.bios3{
+    margin-left: 100px;
+    background:linear-gradient(white,gray);
+align-items: center;
+   margin-top: 30px;
+    height: 305px;
+    width: 80%;
+ display: flex;
+column-gap: 50px;
+border-radius: 20px;
+padding: 0 10px;
+    
+
+}
+.bios h5{
+    font-size: 20px;
+}
+.bios p{
+    font-size: 18px;
+    padding-top: 10px;
+    color: rgb(39, 34, 34);
+}
+.bios img{
+    border-radius: 20px;
+}
+.bios a{
+    text-decoration: none;
+    margin-left: 600px;
+    border: 0.5px gray solid;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+}
+.bios a:hover{
+    color: white;
+    background-color: black;
+}
+.team{
+    height: 600px;
+    width: 100%;
+}
+.team1{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: center;
+}
+.team1A,.team1B,.team1C,.team1D{
+    margin-top: 30px;
+    height: 380px;
+    width: 310px;
+    border: 1px solid rgb(160, 156, 156);
+
+}
+.team h4{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    align-content: center;
+    color: white;
+    background-color: rgb(31, 9, 9);
+}
+.team h5{
+    font-size: 15px;
+    padding: 10px 0;
+}
+.history{
+    background-image: url(history.jpg);
+    height: 450px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    align-content:  center;
+}
+.history1{
+    height: 450px;
+    width: 1200px;
+    margin-left: 50px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-radius: 0px 70px;
+    background:radial-gradient(rgb(248, 246, 246) 40%,rgb(94, 76, 76));
+}
+.history1 h5{
+    
+    font-size: 20px;
+    padding: 10px 10px;
+}
+.history1 p{
+    font-size: 18px;
+    padding: 10px 10px;
+
+
+}
+.achivements{
+    margin-top: 50px;
+   height: 180px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(187, 184, 184);
+}
+.achivements1{
+    height: 550px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(187, 184, 184);
+    
+}
+.achivements1 p{
+    font-size: 20px;
+    text-align: left;
+    padding-top: 30px;
+
+}
+.achivements2{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: center;
+}
+.achivement2A{
+    background-color: rgb(189, 192, 194);
+    height: 350px;
+    width: 300px;
+    text-align: center;
+    margin-top: 50px;
+    border: brown solid 0.3px;
+    border-radius:0px 30px ;
+    
+}
+.achivement2A h5{
+    background-color: brown;
+    padding: 5px 10px;
+    border-radius: 0px 30px;
+    font-size: 20px;
+}
+.achivement2A p{
+    text-align: left;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
 .footer{
     background-image: url(footer2.jpg);
     background-size: cover;
