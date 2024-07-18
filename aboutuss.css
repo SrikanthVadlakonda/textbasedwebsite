@@ -4,14 +4,15 @@
     box-sizing: border-box;
 }
 
+
+
 .container {
     height: auto;
     width: 100%;
     overflow: hidden;
     position: relative;
     border: 1px solid black;
-    font-family: sans-serif
-
+    font-family: sans-serif;
 }
 
 .navbar {
@@ -24,6 +25,18 @@
     border: 1px solid rgb(24, 23, 23);
     position: absolute;
     top: 0;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .logo img {
@@ -34,26 +47,27 @@
 .nav {
     margin-left: 200px;
     margin-right: 20px;
-    
 }
 
 .nav ul {
     list-style: none;
     display: flex;
     column-gap: 50px;
-
 }
 
 .nav ul li {
-
     position: relative;
 }
+
+
+
 
 .nav ul li a {
     font-size: 30px;
     text-decoration: none;
     color: white;
     font-size: 22px;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav ul li a:hover {
@@ -78,25 +92,28 @@
     background-image: url(images/footer1.jpg);
     background-position: center;
     background-size: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.8);
     z-index: 1;
     padding: 10px;
-     width: 150px; 
+    width: 150px;
 }
 
 .nav ul li:hover .sub-menu {
     display: block;
+    animation: fadeInUp 0. ease-in-out;
 }
+
+
 
 .sub-menu li {
     margin-top: 10px;
     border-bottom: rgb(247, 242, 242) 0.5px solid;
-    
 }
 
 .sub-menu li a {
     color: black;
     font-size: 16px;
+    transition: color 0.3s ease-in-out;
 }
 
 .sub-menu li a:hover {
@@ -109,14 +126,17 @@
     border-radius: 10px;
     border: none;
 }
-.brief{
+
+.brief {
     height: 900px;
     width: 100%;
     color: black;
-     margin-top: 150px;
+    margin-top: 150px;
     font-size: 20px;
+
 }
-.brief1{
+
+.brief1 {
     height: 500px;
     width: 100%;
     background-image: url(/images/background6.jpg);
@@ -126,60 +146,84 @@
     color: rgb(249, 250, 243);
     font-weight: 500;
     margin-top: 50px;
+    
 }
-.vision{
+.brief1 p{
+    transform: translateX(-100%);
+    animation: slideIn 2s forwards;
+}
+@keyframes slideIn{
+    to{
+        transform: translateX(0);
+    }
+}
+
+.vision {
     background-image: url(images/our\ vision);
     background-position: center;
     background-size: cover;
     height: 430px;
     width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
 }
-.vision h5{
+
+.vision h5 {
     padding: 10px;
-    color:rgb(51, 33, 13);
+    color: rgb(51, 33, 13);
     font-size: 20px;
 }
-.vision p{
+
+.vision p {
     padding-top: 10px;
     color: rgb(8, 8, 8);
     font-size: 20px;
-    
 }
-.bios{
+
+.bios {
     height: 1200px;
     width: 100%;
     padding-top: 50px;
     margin-top: 30px;
     background-color: rgb(216, 223, 223);
-    
-    
-}
-.bios1,.bios2,.bios3{
-    margin-left: 100px;
-    background:linear-gradient(white,gray);
-align-items: center;
-   margin-top: 30px;
-    height: 305px;
-    width: 80%;
- display: flex;
-column-gap: 50px;
-border-radius: 20px;
-padding: 0 10px;
-    
 
 }
-.bios h5{
+
+.bios1, .bios2, .bios3 {
+    margin-left: 100px;
+    background: linear-gradient(white, gray);
+    align-items: center;
+    margin-top: 30px;
+    height: 305px;
+    width: 80%;
+    display: flex;
+    column-gap: 50px;
+    border-radius: 20px;
+    padding: 0 10px;
+    animation: fadeIn 2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+
+}
+.bios1:hover, .bios2:hover, .bios3:hover {
+    transform: scale(1.05);
+ 
+}
+
+
+.bios h5 {
     font-size: 20px;
 }
-.bios p{
+
+.bios p {
     font-size: 18px;
     padding-top: 10px;
     color: rgb(39, 34, 34);
 }
-.bios img{
+
+.bios img {
     border-radius: 20px;
 }
-.bios a{
+
+.bios a {
     text-decoration: none;
     margin-left: 600px;
     border: 0.5px gray solid;
@@ -187,31 +231,41 @@ padding: 0 10px;
     border-radius: 5px;
     color: black;
     background-color: white;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
-.bios a:hover{
+
+.bios a:hover {
     color: white;
     background-color: black;
 }
-.team{
+
+.team {
     height: 600px;
     width: 100%;
 }
-.team1{
+
+.team1 {
     height: 400px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 10px;
+    column-gap: 15px;
     justify-content: center;
 }
-.team1A,.team1B,.team1C,.team1D{
-    margin-top: 30px;
-    height: 380px;
-    width: 310px;
-    border: 1px solid rgb(160, 156, 156);
 
+.team1A, .team1B, .team1C, .team1D {
+    margin-top: 30px;
+    height: 320px;
+    width: 292px;
+    border: 1px solid rgb(160, 156, 156);
+    transition: transform 0.3s ease-in-out;
 }
-.team h4{
+
+.team1A:hover, .team1B:hover, .team1C:hover, .team1D:hover {
+    transform: scale(1.05);
+}
+
+.team h4 {
     height: 50px;
     width: 100%;
     text-align: center;
@@ -220,59 +274,67 @@ padding: 0 10px;
     color: white;
     background-color: rgb(31, 9, 9);
 }
-.team h5{
+
+.team h5 {
     font-size: 15px;
     padding: 10px 0;
 }
-.history{
+
+.history {
     background-image: url(images/history.jpg);
-    height: 450px;
+    height: 250px;
     width: 100%;
     color: white;
     text-align: center;
-    align-content:  center;
+    align-content: center;
+    animation: fadeIn 1.5s ease-in-out;
 }
-.history1{
+
+.history1 {
     height: 450px;
     width: 1200px;
     margin-left: 50px;
     margin-top: 30px;
     padding-top: 20px;
     border-radius: 0px 70px;
-    background:radial-gradient(rgb(248, 246, 246) 40%,rgb(94, 76, 76));
+    background: radial-gradient(rgb(248, 246, 246) 40%, rgb(94, 76, 76));
+    animation: fadeIn 1.5s ease-in-out;
 }
-.history1 h5{
-    
+
+.history1 h5 {
     font-size: 20px;
     padding: 10px 10px;
 }
-.history1 p{
+
+.history1 p {
     font-size: 18px;
     padding: 10px 10px;
-
-
 }
-.achivements{
+
+.achivements {
     margin-top: 50px;
-   height: 180px;
+    height: 180px;
     width: 100%;
     text-align: center;
     background-color: rgb(187, 184, 184);
+    animation: fadeIn 2s ease-in-out;
 }
-.achivements1{
+
+.achivements1 {
     height: 550px;
     width: 100%;
     text-align: center;
     background-color: rgb(187, 184, 184);
-    
+    animation: fadeIn 2s ease-in-out;
 }
-.achivements1 p{
+
+.achivements1 p {
     font-size: 20px;
     text-align: left;
     padding-top: 30px;
-
 }
-.achivements2{
+
+.achivements2 {
     height: 300px;
     width: 100%;
     display: flex;
@@ -280,21 +342,23 @@ padding: 0 10px;
     column-gap: 20px;
     justify-content: center;
 }
-.achivement2A{
+
+.achivement2A {
     background-color: rgb(165, 168, 172);
     height: 350px;
     width: 300px;
     text-align: center;
     margin-top: 50px;
     border: brown solid 0.3px;
-    border-radius:0px 30px ;
-    
-}
-.achivement2A h5{
-    background-color: brown;
-    padding: 5px 10px;
     border-radius: 0px 30px;
-    font-size: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.achivement2A h5 {
+    font-size: 20px
+    ;
+    background-color: brown;
+    border-radius: 0 30px;
 }
 .achivement2A p{
     text-align: left;
@@ -316,6 +380,8 @@ padding: 0 10px;
     column-gap: 250px;
     padding-top: 50px;
     color: white;
+    animation: fadeIn 2s ease-in-out;
+
 }
 .footer li{
     list-style: none;
