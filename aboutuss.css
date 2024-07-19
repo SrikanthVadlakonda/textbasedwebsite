@@ -15,6 +15,7 @@
     font-family: sans-serif;
 }
 
+
 .navbar {
     background-image: url(images/footer2.jpg);
     height: 120px;
@@ -39,10 +40,7 @@
     }
 }
 
-.logo img {
-    height: 100px;
-    width: 280px;
-}
+
 
 .nav {
     margin-left: 200px;
@@ -127,6 +125,7 @@
     border: none;
 }
 
+
 .brief {
     height: 900px;
     width: 100%;
@@ -164,7 +163,6 @@
     background-size: cover;
     height: 430px;
     width: 100%;
-    animation: fadeIn 1.5s ease-in-out;
 }
 
 .vision h5 {
@@ -177,6 +175,30 @@
     padding-top: 10px;
     color: rgb(8, 8, 8);
     font-size: 20px;
+}
+.discussion-board{
+    margin-top: 50px;
+    height:180px ;
+    width: 100%;
+    background-image: url(/images/background6.jpg);
+    background-size: cover;
+    text-align: center;
+    align-content: center;
+    color: white;
+    
+}
+.discussion-board a{
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    border: 0.5px solid black;
+    padding: 5px 12px;
+    border-radius: 5px;
+    background-color: white;
+}
+.discussion-board a:hover{
+    color: white;
+    background-color: black;
 }
 
 .bios {
@@ -281,33 +303,33 @@
 }
 
 .history {
-    background-image: url(images/history.jpg);
-    height: 250px;
+    background-color: black;
+    height: 100px;
     width: 100%;
     color: white;
     text-align: center;
     align-content: center;
-    animation: fadeIn 1.5s ease-in-out;
 }
 
 .history1 {
-    height: 450px;
-    width: 1200px;
-    margin-left: 50px;
-    margin-top: 30px;
+    background-image: url(/images/history.jpg);
+    height: 500px;
+    width: 1250px;
+    margin-top: 10px;
+    margin-left: 25px;
     padding-top: 20px;
     border-radius: 0px 70px;
-    background: radial-gradient(rgb(248, 246, 246) 40%, rgb(94, 76, 76));
-    animation: fadeIn 1.5s ease-in-out;
+    color: rgb(238, 215, 215);
+    align-content: center;
 }
 
 .history1 h5 {
-    font-size: 20px;
+    font-size: 25px;
     padding: 10px 10px;
 }
 
 .history1 p {
-    font-size: 18px;
+    font-size: 22px;
     padding: 10px 10px;
 }
 
@@ -317,15 +339,14 @@
     width: 100%;
     text-align: center;
     background-color: rgb(187, 184, 184);
-    animation: fadeIn 2s ease-in-out;
 }
 
 .achivements1 {
+
     height: 550px;
     width: 100%;
     text-align: center;
     background-color: rgb(187, 184, 184);
-    animation: fadeIn 2s ease-in-out;
 }
 
 .achivements1 p {
@@ -351,14 +372,14 @@
     margin-top: 50px;
     border: brown solid 0.3px;
     border-radius: 0px 30px;
-    animation: fadeIn 2s ease-in-out;
 }
 
 .achivement2A h5 {
-    font-size: 20px
-    ;
+    font-size: 20px;
     background-color: brown;
     border-radius: 0 30px;
+    padding: 5px;
+
 }
 .achivement2A p{
     text-align: left;
@@ -380,13 +401,12 @@
     column-gap: 250px;
     padding-top: 50px;
     color: white;
-    animation: fadeIn 2s ease-in-out;
 
 }
 .footer li{
     list-style: none;
     margin-top: 22px;
-    font-size: 20px;
+    font-size: 22px;
 }
 .footer li a{
     text-decoration: none;
@@ -396,3 +416,9 @@
 .footer li a:hover{
     color: orangered;
 }
+.icons i{
+    margin-top: 10px;
+padding: 5px;
+    
+}
+

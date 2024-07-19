@@ -3,26 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
-}
+
+
 
 .container {
-    background-color: rgb(255, 238, 238);
-    background-size: cover;
     height: auto;
     width: 100%;
     overflow: hidden;
     position: relative;
     border: 1px solid black;
-    font-family: sans-serif
-    
-
+    font-family: sans-serif;
 }
+
 
 .navbar {
     background-image: url(images/footer2.jpg);
-    height: 110px;
+    height: 120px;
     width: 100%;
     background-color: rgb(221, 217, 217);
     display: flex;
@@ -31,8 +27,8 @@ html{
     position: absolute;
     top: 0;
     animation: fadeInDown 1s ease-in-out;
-
 }
+
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -44,34 +40,32 @@ html{
     }
 }
 
-.logo img {
-    height: 100px;
-    width: 280px;
-}
+
 
 .nav {
     margin-left: 200px;
     margin-right: 20px;
-    
 }
 
 .nav ul {
     list-style: none;
     display: flex;
     column-gap: 50px;
-
 }
 
 .nav ul li {
-
     position: relative;
 }
+
+
+
 
 .nav ul li a {
     font-size: 30px;
     text-decoration: none;
     color: white;
     font-size: 22px;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav ul li a:hover {
@@ -96,25 +90,28 @@ html{
     background-image: url(images/footer1.jpg);
     background-position: center;
     background-size: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.8);
     z-index: 1;
     padding: 10px;
-     width: 150px; 
+    width: 150px;
 }
 
 .nav ul li:hover .sub-menu {
     display: block;
+    animation: fadeInUp 0. ease-in-out;
 }
+
+
 
 .sub-menu li {
     margin-top: 10px;
     border-bottom: rgb(247, 242, 242) 0.5px solid;
-    
 }
 
 .sub-menu li a {
     color: black;
     font-size: 16px;
+    transition: color 0.3s ease-in-out;
 }
 
 .sub-menu li a:hover {
@@ -127,119 +124,6 @@ html{
     border-radius: 10px;
     border: none;
 }
-.product{
-    margin-top: 130px;
-    height: 150px;
-    width: 100%;
-}
-.digital{
-    height: 700px;
-    width: 100%;
-    border: BLACK solid;
-    
-}
-.digital img{
-    transition: tranform  ease-in-out;
-}
-.digital img:hover{
-    transform: scale(1.10);
-}
-.digital1{
-
-    height:60px;
-    width: 100%;
-    display: flex;
-    column-gap: 25px;
-    row-gap: 20px;
-    justify-content: center;
-}
-.digital1A,.softwareA, .techsupportA{
-    padding-top: 30px;
-    height: 480px;
-    width: 350px;
-    border-radius: 20px;
-    transform: translateX(-50%);
-    animation: slideIn 2s forwards;
-}
-@keyframes slideIn{
-    to{
-        transform:translateX(0);
-    }
-}
-    
-    
-
-.digital p{
-    font-size: 14px;
-    text-align: left;
-    border-bottom: 0.5px gray solid;
-    margin-top: 10px;
-    color: rgb(51, 49, 49);
-}
-.digital h6{
-font-size: 15px;
-padding: 10px;
-
-}
-.digital a{
-    height: 40px;
-    width: 100px;
-    text-decoration: none;
-    color: black;
-    align-content: center;
-    text-align: center;
-    margin-top: 200px;
-    border-radius: 10px;
-    border: black 0.5px solid;
-}
-.digital a:hover{
-    color:white;
-    background-color: black;
-}
-.techServices{
-    height: 450px;
-    width: 100%;
-    border: gray solid;
-}
-
-.table-container {
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-th, td {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-th {
-    background-color: #007bff;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tr:hover {
-    background-color: #f1f1f1;
-}
-.container h3{
-    font-size: 30px;
-    padding: 10px;
-}
-
-
 
 
 .footer{
@@ -255,6 +139,7 @@ tr:hover {
     column-gap: 250px;
     padding-top: 50px;
     color: white;
+
 }
 .footer li{
     list-style: none;
@@ -269,3 +154,9 @@ tr:hover {
 .footer li a:hover{
     color: orangered;
 }
+.icons i{
+    margin-top: 10px;
+padding: 5px;
+    
+}
+
